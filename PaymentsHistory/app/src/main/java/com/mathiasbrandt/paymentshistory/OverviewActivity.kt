@@ -18,6 +18,6 @@ class OverviewActivity : AppCompatActivity() {
     }
 
     private fun paymentListUpdated(paymentList: PaymentList) {
-        
+
     }
 }
