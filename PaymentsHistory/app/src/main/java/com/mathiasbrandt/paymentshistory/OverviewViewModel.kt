@@ -1,13 +1,9 @@
 package com.mathiasbrandt.paymentshistory
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.android.gms.tasks.Task
-import com.google.firebase.firestore.QuerySnapshot
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.info
 import javax.inject.Inject
 
 class OverviewViewModel @Inject constructor(): ViewModel(), AnkoLogger {
