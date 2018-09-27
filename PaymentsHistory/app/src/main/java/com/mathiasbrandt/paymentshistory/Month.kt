@@ -1,20 +1,22 @@
 package com.mathiasbrandt.paymentshistory
 
-class Month {
-    companion object {
-        const val JAN: Long = 1
-        const val FEB: Long = 2
-        const val MAR: Long = 3
-        const val APR: Long = 4
-        const val MAY: Long = 5
-        const val JUN: Long = 6
-        const val JUL: Long = 7
-        const val AUG: Long = 8
-        const val SEP: Long = 9
-        const val OCT: Long = 10
-        const val NOV: Long = 11
-        const val DEC: Long = 12
+enum class Month(val id: Int, val nameResId: Int) {
+    JAN(1, R.string.month_jan),
+    FEB(2, R.string.month_feb),
+    MAR(3, R.string.month_mar),
+    APR(4, R.string.month_apr),
+    MAY(5, R.string.month_may),
+    JUN(6, R.string.month_jun),
+    JUL(7, R.string.month_jul),
+    AUG(8, R.string.month_aug),
+    SEP(9, R.string.month_sep),
+    OCT(10, R.string.month_oct),
+    NOV(11, R.string.month_nov),
+    DEC(12, R.string.month_dec);
 
-        fun isValid(month: Int): Boolean = month in JAN..DEC
+    companion object {
+        fun getList(): List<Month> {
+            return listOf(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC)
+        }
     }
 }

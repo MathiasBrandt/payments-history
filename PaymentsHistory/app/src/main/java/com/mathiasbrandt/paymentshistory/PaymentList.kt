@@ -1,10 +1,10 @@
 package com.mathiasbrandt.paymentshistory
 
 class PaymentList {
-    private val payments = mutableMapOf<Long, MutableList<Payment>>()
+    private val payments = mutableMapOf<Month, MutableList<Payment>>()
 
     init {
-        for(month: Long in Month.JAN..Month.DEC) {
+        for(month in Month.getList()) {
             payments[month] = mutableListOf()
         }
     }
