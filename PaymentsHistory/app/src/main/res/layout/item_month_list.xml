@@ -6,14 +6,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
+        android:id="@+id/item_overview_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:textSize="18sp"
+        android:textColor="#6e6e6e"
+        android:gravity="center"
+        android:background="@drawable/ic_month"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="S"
+        />
+
+    <TextView
         android:id="@+id/item_overview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_overview_icon"
         tools:text="September"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

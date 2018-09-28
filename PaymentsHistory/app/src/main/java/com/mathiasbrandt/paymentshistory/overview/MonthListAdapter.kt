@@ -24,6 +24,7 @@ class MonthListAdapter(val items: List<Month>): RecyclerView.Adapter<OverviewLis
 
 class OverviewListViewHolder(override val containerView: View): RecyclerView.ViewHolder(containerView), LayoutContainer {
     fun bind(item: Month) {
-        containerView.item_overview_title.setText(item.nameResId)
+        containerView.item_overview_icon.text = item.id.toString()
+        containerView.item_overview_title.text = containerView.context.getString(item.nameResId)
     }
 }
