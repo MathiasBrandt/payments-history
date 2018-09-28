@@ -1,4 +1,4 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.firebase
 
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore

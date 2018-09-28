@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OverviewActivity">
+    tools:context=".overview.OverviewActivity">
 
-    <com.mathiasbrandt.paymentshistory.Toolbar
+    <com.mathiasbrandt.paymentshistory.custom.Toolbar
         android:id="@+id/month_list_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

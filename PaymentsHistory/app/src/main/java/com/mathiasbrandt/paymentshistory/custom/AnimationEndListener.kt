@@ -1,4 +1,4 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.custom
 
 import android.animation.Animator
 

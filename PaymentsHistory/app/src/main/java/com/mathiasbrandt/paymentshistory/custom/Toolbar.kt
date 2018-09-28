@@ -1,13 +1,13 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.custom
 
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.mathiasbrandt.paymentshistory.R
 import kotlinx.android.synthetic.main.custom_view_toolbar.view.*
 import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.info
 
 class Toolbar @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0):
         ConstraintLayout(context, attrs, defStyleAttr), AnkoLogger {
@@ -33,6 +33,6 @@ class Toolbar @JvmOverloads constructor(context: Context, attrs: AttributeSet? =
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
-        outlineProvider = CustomOutlineProvider(w, h)
+        outlineProvider = RectangularOutlineProvider(w, h)
     }
 }

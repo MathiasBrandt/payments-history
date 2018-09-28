@@ -2,7 +2,7 @@ package com.mathiasbrandt.paymentshistory.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.mathiasbrandt.paymentshistory.OverviewViewModel
+import com.mathiasbrandt.paymentshistory.overview.OverviewViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module

@@ -1,4 +1,6 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.models
+
+import com.mathiasbrandt.paymentshistory.R
 
 enum class Month(val id: Int, val nameResId: Int) {
     JAN(1, R.string.month_jan),

@@ -1,5 +1,7 @@
 package com.mathiasbrandt.paymentshistory
 
+import com.mathiasbrandt.paymentshistory.models.Month
+
 class PaymentList {
     private val payments = mutableMapOf<Month, MutableList<Payment>>()
 

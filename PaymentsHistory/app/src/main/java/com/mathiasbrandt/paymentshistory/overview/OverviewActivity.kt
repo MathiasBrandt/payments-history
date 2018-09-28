@@ -1,7 +1,8 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.overview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.mathiasbrandt.paymentshistory.R
 import org.jetbrains.anko.AnkoLogger
 
 

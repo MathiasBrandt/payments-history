@@ -1,11 +1,12 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.overview
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.mathiasbrandt.paymentshistory.models.Month
+import com.mathiasbrandt.paymentshistory.R
 import kotlinx.android.synthetic.main.fragment_month_list.*
 import org.jetbrains.anko.AnkoLogger
 
@@ -19,7 +20,7 @@ class MonthListFragment: Fragment(), AnkoLogger {
     }
 
     private fun setUpMonthList() {
-        val adapter = OverviewListAdapter(Month.getList())
+        val adapter = MonthListAdapter(Month.getList())
         month_list.adapter = adapter
         month_list.overScrollMode = View.OVER_SCROLL_NEVER
 

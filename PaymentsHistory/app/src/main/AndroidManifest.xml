@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme"
         android:name=".CustomApplication"
         >
-        <activity android:name=".OverviewActivity">
+        <activity android:name=".overview.OverviewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

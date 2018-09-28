@@ -1,8 +1,12 @@
-package com.mathiasbrandt.paymentshistory
+package com.mathiasbrandt.paymentshistory.overview
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.mathiasbrandt.paymentshistory.Payment
+import com.mathiasbrandt.paymentshistory.PaymentList
+import com.mathiasbrandt.paymentshistory.firebase.FirebaseConstants
+import com.mathiasbrandt.paymentshistory.firebase.Firestore
 import org.jetbrains.anko.AnkoLogger
 import javax.inject.Inject
 
